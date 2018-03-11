@@ -30,6 +30,23 @@
             <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
         </license>
     </licenses>
+    
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Opticca Releases Repository</name>
+            <url>http://nexus-ci-cd.192.168.99.100.nip.io/repository/maven-releases</url>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Opticca Snapshots Repository</name>
+            <url>http://nexus-ci-cd.192.168.99.100.nip.io/repository/maven-snapshots/</url>
+            <layout>default</layout>
+        </snapshotRepository>
+    </distributionManagement>
+    
+    
 
     <properties>
         <!-- Explicitly declaring the source encoding eliminates the following message: -->
